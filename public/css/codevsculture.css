@@ -1,12 +1,22 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
+
+
+
+
 html,
 body,
 ul,
 li {
-    margin: 0; padding: 0;
+    margin: 0px; padding: 0;
 }
 
+
+
 body {
-    background: #FCD424; font: normal 16px/24px 'Helvetica Neue', Helvetica, Arial, freesans, sans-serif;
+    background: white; font-family: 'Roboto Mono', monospace;
+
+
 }
 
 button,
@@ -23,31 +33,47 @@ input {
     width: 50px;
 }
 
-#programmingview {
-  width: 22%;
+h1 {
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    size: 40px;
+    color: #2DAE62;
+}
+
+#codeview {
+  width: 33%;
   float:left;
   height: 500px;
   position: relative;
-  background: white;
+  background: #2781B8;
 }
 
-#indieview{
-  width: 22%;
+#deckview {
+  width: 33%;
   height: 500px;
-  background: white;
+  background: #2DAE62;
+  position: relative;
+  display: inline-block;
+}
+
+#cultureview{
+  width: 33%;
+  height: 500px;
+  background: #8A4B9E;
   position: relative;
   float: right;
 }
 
 #viewport {
-    width: 50%;
-    max-width: 500px;
+    width: 100%;
     height: 500px;
     background: #C7433E;
     border: 10px solid #ED5D52;
     margin: 100px auto 0;
     position: relative;
-    float: left;
+    display: inline-block;
+    margin-left: auto ;
+    margin-right: auto ;
 }
 
 #viewport .stack {
