@@ -34,10 +34,20 @@ input {
 }
 
 h1 {
+    margin-top: 5%;
     font-family: 'Source Sans Pro';
     font-weight: 300;
     size: 40px;
     color: #2DAE62;
+}
+
+img {
+  height:100px;
+  clear:both;
+  position:absolute;bottom:0;
+  margin-left: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #codeview {
@@ -49,11 +59,12 @@ h1 {
 }
 
 #deckview {
-  width: 33%;
+  width: 34%;
   height: 500px;
   background: #2DAE62;
   position: relative;
   display: inline-block;
+
 }
 
 #cultureview{
@@ -69,7 +80,7 @@ h1 {
     height: 500px;
     background: #C7433E;
     border: 10px solid #ED5D52;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
     position: relative;
     display: inline-block;
     margin-left: auto ;
@@ -81,10 +92,10 @@ h1 {
 }
 
 #viewport li {
-    width: 200px; height: 300px; list-style: none; background: #fff; border-radius: 5px; position: absolute; top: 0; left: 0; box-shadow: 0 0 2px rgba(0,0,0,.2), 1px 1px 1px rgba(0,0,0,.2); line-height: 300px; text-align: center; font-size: 100px; border: 10px solid #ECECEC; box-sizing: border-box; cursor: default;
+    width: 200px; height: 300px; list-style: none; background: #fff; border-radius: 5px; position: absolute; top: 0; left: 0; box-shadow: 0 0 2px rgba(0,0,0,.2), 1px 1px 1px rgba(0,0,0,.2); line-height: 30px; text-align: center; font-size: 100px; border: 10px solid #ECECEC; box-sizing: border-box; cursor: default;
 }
 
-#viewport li.clubs,
+/*#viewport li.clubs,
 #viewport li.spades {
     color: #373737;
 }
@@ -92,7 +103,7 @@ h1 {
 #viewport li.diamonds,
 #viewport li.hearts {
     color: #ED5D52;
-}
+}*/
 
 #viewport li.in-deck:nth-child(3) {
     top: 2px; transform: translate(2px, 2px) rotate(0.4deg);
@@ -115,9 +126,19 @@ h1 {
 
 #source {
   clear: both;
+    margin-top: 300px;
     width: 500px; margin: 20px auto;
 }
 
 #source a {
+
     color: #C7433E;
+}
+
+#viewport ul li a{
+  font-size: 20px;
+  margin-top: 10;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
